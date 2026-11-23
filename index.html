@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sree Hari G — Software Engineer · AI, Web &amp; Automation</title>
+<meta name="description" content="Sree Hari G — software engineer building AI and web apps, workflow automation, and the software that controls PLCs and robots. Creator of Smart Ladder (PLC AI Studio).">
+<meta property="og:title" content="Sree Hari G — Software Engineer · AI, Web & Automation">
+<meta property="og:description" content="PLC automation, IIoT and web — Smart Ladder (SIH 2026), FoldX (MECA 2026 national finalist).">
+<meta property="og:image" content="assets/img/foldx-team.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234de1ff'/%3E%3Cpath d='M8 6v20M24 6v20M8 12h16M8 20h16' stroke='%23070a12' stroke-width='3'/%3E%3C/svg%3E">
+<script>document.documentElement.dataset.grade="ultra"</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Boot screen -->
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot__lines">
+    <p>&gt; PLC BOOT ............ <b>OK</b></p>
+    <p>&gt; I/O SCAN ............ <b>OK</b></p>
+    <p>&gt; LOAD PROGRAM SREE.prj  <b>OK</b></p>
+    <p>&gt; MODE ................ <b class="g">RUN</b></p>
+  </div>
+</div>
+
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#top" aria-label="Sree Hari G — home">SREE<span>.</span></a>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#automate">Automation</a>
+    <a href="#freelance">Freelance</a>
+    <a href="#services">Services</a>
+    <a href="#journey">Journey</a>
+    <a href="#skills">Skills</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav__gh" href="https://github.com/sreeharishadow358-cmyk" target="_blank" rel="noopener" aria-label="GitHub profile"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.52.56.83 1.28.83 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a>
+  <a class="btn btn--sm btn--y" href="#contact">Hire me</a>
+</header>
+
+<div class="bgfx" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<main id="top">
+
+<!-- X0 HERO: pick-and-place showreel -->
+<section class="show intro" id="hero">
+  <div class="show__stage">
+    <canvas id="arm" class="show__3d" aria-label="3D robot arm presenting Sree Hari's work card by card as you scroll"></canvas>
+
+    <div class="show__intro">
+      <p class="avail"><span class="avail__dot"></span>Open to internships &amp; freelance · Coimbatore / remote</p>
+      <p class="becoming" aria-label="A student in the process of becoming an engineer"><span>Student</span><span class="becoming__bar"><i></i></span><span>Engineer</span><b class="becoming__pct">in progress</b></p>
+      <h1 class="hero__name">Sree Hari G<span class="hero__role">Software engineer for <em>AI, web &amp; automation</em></span></h1>
+      <p class="hero__lead">I build web apps with AI inside them, automate the boring work with n8n-style workflows, and write the software that drives PLCs and robot arms — so machines do more and people do less of the repetitive stuff.</p>
+      <p class="hero__now"><span>Now building</span> Smart Ladder — an AI that writes verified PLC code · SIH 2026</p>
+      <div class="hero__cta">
+        <a class="btn btn--y" href="#contact">Hire me</a>
+        <a class="btn btn--ghost" href="#work">See my work</a>
+        <a class="icon-btn" href="https://github.com/sreeharishadow358-cmyk" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.52.56.83 1.28.83 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg></a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/sreehari-ganeshan/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="chaps">
+      <article class="chap chap--intro" aria-hidden="true" data-tag="01 · WHO" data-title="Sree Hari G" data-img="assets/img/me-drawn.png" data-draw="me">
+        <p class="chap__tag">01 / 06 · Who</p>
+        <h2>Hi, I'm Sree Hari.</h2>
+        <p>A software engineer who builds for machines. I'm a Mechatronics student at SNS College of Technology, Coimbatore. I write AI, web and automation software, then wire it into real hardware.</p>
+        <p class="chap__links"><a href="https://github.com/sreeharishadow358-cmyk" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/sreehari-ganeshan/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+      </article>
+      <article class="chap" data-tag="02 · SOFTWARE" data-title="AI × Web" data-vid="assets/vid/plc-studio.mp4" data-img="assets/vid/plc-studio.jpg">
+        <p class="chap__tag">02 / 06 · AI &amp; web</p>
+        <h2>Software that <em>thinks.</em></h2>
+        <p>Next.js and TypeScript apps with AI doing real work inside them — like Smart Ladder, which turns a plain-English description into verified, safety-checked PLC code.</p>
+        <p class="chap__links"><a href="https://plc-ai-studio-rho.vercel.app" target="_blank" rel="noopener">Try PLC AI Studio ↗</a><a href="#work">Case study ↓</a></p>
+      </article>
+      <article class="chap" data-tag="03 · AUTOMATION" data-title="Automation" data-draw="flow">
+        <p class="chap__tag">03 / 06 · Software automation</p>
+        <h2>Work that <em>runs itself.</em></h2>
+        <p>I'm deep into workflow automation with tools like n8n — webhooks, APIs and AI agents that link sensors, sheets and alerts so the repetitive work just happens.</p>
+        <p class="chap__links"><a href="#automate">See how I wire it ↓</a></p>
+      </article>
+      <article class="chap" data-tag="04 · HARDWARE" data-title="PLC &amp; machines" data-vid="assets/vid/foldx-loop.mp4" data-img="assets/vid/foldx-loop.jpg">
+        <p class="chap__tag">04 / 06 · Hardware automation</p>
+        <h2>Machines that <em>obey.</em></h2>
+        <p>Ladder logic, HMIs and safety interlocks. FoldX, our PLC fabric-folding machine, reached the national final of the 6th Mitsubishi Electric Cup.</p>
+        <p class="chap__links"><a href="#foldx">FoldX ↓</a></p>
+      </article>
+      <article class="chap" data-tag="05 · ROBOTICS" data-title="IoT &amp; robots" data-img="assets/img/traffic-signal.jpg">
+        <p class="chap__tag">05 / 06 · IoT &amp; robotics</p>
+        <h2>Hardware that <em>talks back.</em></h2>
+        <p>Arduino and ESP32 builds, sensors, robot arms and e-Yantra robotics — devices that report to the software above them.</p>
+        <p class="chap__links"><a href="#iot">IoT builds ↓</a></p>
+      </article>
+      <article class="chap" data-tag="06 · WHY" data-title="Impact" data-draw="impact">
+        <p class="chap__tag">06 / 06 · Why I build</p>
+        <h2>Made to make life <em>easier.</em></h2>
+        <p>Connect software to the physical world so everyday work gets faster, safer and cheaper — for factories, campuses and the people in them.</p>
+        <p class="chap__links"><a href="#contact" class="hot">Work with me →</a><a href="#work">See the work ↓</a></p>
+      </article>
+    </div>
+
+    <div class="show__hud" aria-hidden="true">
+      <span class="dot run"></span><span>ARM-01</span><span>PICK <b id="pickN">00</b>/06</span><span id="pickState">STANDBY</span>
+      <i class="show__bar"><i id="pickBar"></i></i>
+    </div>
+    <p class="hero__hint" aria-hidden="true"><span class="mouse"></span>Scroll — the arm presents my work</p>
+  </div>
+</section>
+
+<!-- WIRES: the connection between software and machines -->
+<section class="wires" id="wires">
+  <div class="wires__stage">
+    <canvas id="wiresCanvas" aria-label="3D bundle of glowing cables that unravels and re-wires into a ring as you scroll"></canvas>
+    <div class="wires__a on">
+      <p class="lbl">( A )</p>
+      <h2 class="ed">Where software<br><em>merges with</em><br><span class="ed__sl">//</span> machines</h2>
+      <p>Every project I build starts as code and ends as something that moves, measures or decides in the real world.</p>
+    </div>
+    <div class="wires__b">
+      <p class="lbl">( B )</p>
+      <h2 class="ed">Start building<br><em>differently.</em></h2>
+      <p>One engineer for the whole chain — the AI, the web app, the workflow and the machine it drives.</p>
+      <a class="btn btn--ghost btn--sm" href="#work">See the work</a>
+    </div>
+    <ul class="wires__tags" aria-hidden="true"><li style="--dx:0;--dy:-1">AI</li><li style="--dx:1;--dy:0">Web</li><li style="--dx:0;--dy:1">Automation</li><li style="--dx:-1;--dy:0">Hardware</li></ul>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__t">
+  <span>AI apps</span><i></i><span>Next.js</span><i></i><span>TypeScript</span><i></i><span>n8n workflows</span><i></i><span>REST APIs</span><i></i><span>RAG / LLM</span><i></i><span>PLC ladder logic</span><i></i><span>Robot arms</span><i></i><span>ESP32</span><i></i><span>IIoT</span><i></i>
+  <span>AI apps</span><i></i><span>Next.js</span><i></i><span>TypeScript</span><i></i><span>n8n workflows</span><i></i><span>REST APIs</span><i></i><span>RAG / LLM</span><i></i><span>PLC ladder logic</span><i></i><span>Robot arms</span><i></i><span>ESP32</span><i></i><span>IIoT</span><i></i>
+</div></div>
+
+<!-- X1 PROOF -->
+<section class="proof" id="proof">
+  <div class="proof__item reveal"><b>National</b><span>Finalist · 6th Mitsubishi Electric Cup 2026</span></div>
+  <div class="proof__item reveal"><b>SIH ’26</b><span>Internal-round shortlist · Smart Ladder</span></div>
+  <div class="proof__item reveal"><b class="count" data-n="3">0</b><span>Hackathon teams led</span></div>
+  <div class="proof__item reveal"><b><span class="count" data-n="3">0</span>+</b><span>Freelance clients delivered</span></div>
+  <div class="proof__item reveal"><b>3–4</b><span>Startups worked with</span></div>
+  <div class="proof__item reveal"><b>e-Yantra</b><span>Robotics programming · IIT Bombay</span></div>
+</section>
+
+<!-- Y0 WORK -->
+<section class="sec" id="work">
+  <header class="sec__head reveal">
+    <p class="eyebrow"><span class="idx">( 01 )</span>Selected work</p>
+    <h2>Software first. <em>Then</em><br>it moves something real.</h2>
+  </header>
+
+  <!-- Smart Ladder -->
+  <article class="proj proj--flag reveal">
+    <div class="proj__meta">
+      <p class="tags"><span class="tag tag--y">Flagship</span><span class="tag">SIH 2026</span><span class="tag tag--g">● Live</span></p>
+      <h3>Smart Ladder <small>PLC AI Studio</small></h3>
+      <div class="pbr">
+        <div><h4>Problem</h4><p>Ladder logic is hard for beginners — and every PLC brand speaks a different address language: <code>X0</code> on Mitsubishi, <code>I0.0</code> on Siemens, <code>I:0/0</code> on Allen-Bradley. One wrong contact and a machine behaves dangerously.</p></div>
+        <div><h4>What I built</h4><p>A browser workbench where you describe the machine in plain English. AI plus a rule-based compiler generates the rungs, a validator checks them against safety rules, and a virtual station runs the program before it ever touches real hardware.</p></div>
+        <div><h4>Result</h4><p>Shortlisted in the Smart India Hackathon 2026 internal round (Student Innovation). Refined with feedback from an industry visit. Live and usable today.</p></div>
+      </div>
+      <p class="chips"><span>Next.js</span><span>TypeScript</span><span>RAG / LLM</span><span>Node backend</span><span>Rule engine</span><span>Vercel</span></p>
+      <p class="links">
+        <a class="btn btn--y btn--sm" href="https://plc-ai-studio-rho.vercel.app" target="_blank" rel="noopener">Try it live ↗</a>
+        <a class="btn btn--ghost btn--sm" href="https://github.com/sreeharishadow358-cmyk/plc-full-web" target="_blank" rel="noopener">Code ↗</a>
+      </p>
+    </div>
+    <div class="proj__media">
+      <div class="tabs" role="tablist" aria-label="PLC AI Studio pages">
+        <button role="tab" class="tab is-on" aria-selected="true" data-v="plc-studio" data-t="Describe it in plain English — get ladder logic, IL code and a logic explanation."><i>01</i>Studio</button>
+        <button role="tab" class="tab" aria-selected="false" data-v="plc-debug" data-t="Catches unsafe logic — E-stop wired normally open, missing seal-in, double coils — and fixes it in one click."><i>02</i>Debug</button>
+        <button role="tab" class="tab" aria-selected="false" data-v="plc-simulate" data-t="A virtual station: push-buttons, motor output, live timing diagram — test before you wire."><i>03</i>Simulate</button>
+      </div>
+      <div class="screen">
+        <div class="screen__bar"><i></i><i></i><i></i><span>plc-ai-studio-rho.vercel.app</span></div>
+        <video id="plcVid" class="lazyvid" data-src="assets/vid/plc-studio.mp4" poster="assets/vid/plc-studio.jpg" muted loop playsinline preload="none"></video>
+      </div>
+      <p class="tabcap" id="plcCap">Describe it in plain English — get ladder logic, IL code and a logic explanation.</p>
+      <a class="yt" href="https://youtu.be/ItuSyUQjweQ" target="_blank" rel="noopener"><span class="yt__play"></span><span class="yt__txt"><b>Watch the full demo</b><small>Smart Ladder (SIH) · YouTube ↗</small></span></a>
+    </div>
+    <div class="plc-stage">
+      <div class="plc-stage__head">
+        <p class="eyebrow"><span class="idx">( live )</span>Try the logic Smart Ladder writes</p>
+        <h4 class="plc-stage__h">Press START. Watch the rungs energise.</h4>
+      </div>
+      <div class="plc-3d"><canvas id="ladder" aria-label="3D ladder logic model that energises when the motor runs"></canvas><span class="plc-3d__tag">3D rung model · drag your cursor</span></div>
+  <div class="hud" id="hud">
+        <div class="hud__head">
+          <span class="addr">RUNG 0000</span>
+          <span>Motor start / stop with seal-in</span>
+          <span class="hud__state" id="hudState">MOTOR OFF</span>
+        </div>
+        <svg class="rung" id="rung" viewBox="0 0 520 170" role="img" aria-label="Interactive ladder logic rung: start, stop, emergency stop and motor coil">
+          <g class="rail"><line x1="20" y1="20" x2="20" y2="160"/><line x1="500" y1="20" x2="500" y2="160"/></g>
+          <text class="lbl" x="12" y="14">L1</text><text class="lbl" x="492" y="14">L2</text>
+          <!-- live wires -->
+          <path class="w live" d="M20 60 H90 M60 60 V130 H90"/>
+          <!-- X0 start NO -->
+          <path class="w" data-w="n1" d="M130 60 H190 M130 130 H160 V60"/>
+          <path class="w" data-w="n2" d="M230 60 H290"/>
+          <path class="w" data-w="n3" d="M330 60 H400"/>
+          <path class="w" data-w="n4" d="M440 60 H500"/>
+          <g class="c" data-c="x0"><line x1="100" y1="44" x2="100" y2="76"/><line x1="120" y1="44" x2="120" y2="76"/><path d="M90 60H100M120 60H130"/></g>
+          <g class="c" data-c="seal"><line x1="100" y1="114" x2="100" y2="146"/><line x1="120" y1="114" x2="120" y2="146"/><path d="M90 130H100M120 130H130"/></g>
+          <g class="c nc" data-c="x1"><line x1="200" y1="44" x2="200" y2="76"/><line x1="220" y1="44" x2="220" y2="76"/><line class="slash" x1="196" y1="74" x2="224" y2="46"/><path d="M190 60H200M220 60H230"/></g>
+          <g class="c nc" data-c="x2"><line x1="300" y1="44" x2="300" y2="76"/><line x1="320" y1="44" x2="320" y2="76"/><line class="slash" x1="296" y1="74" x2="324" y2="46"/><path d="M290 60H300M320 60H330"/></g>
+          <g class="coil" data-c="y0"><path d="M412 42 Q402 60 412 78 M428 42 Q438 60 428 78"/><path d="M400 60H406M434 60H440"/></g>
+          <text class="lbl" x="98" y="34">X0</text><text class="lbl s" x="88" y="96">START</text>
+          <text class="lbl" x="98" y="162">Y0</text><text class="lbl s" x="135" y="150">SEAL-IN</text>
+          <text class="lbl" x="198" y="34">X1</text><text class="lbl s" x="192" y="96">STOP</text>
+          <text class="lbl" x="298" y="34">X2</text><text class="lbl s" x="290" y="96">E-STOP</text>
+          <text class="lbl" x="412" y="34">Y0</text><text class="lbl s" x="402" y="96">MOTOR</text>
+        </svg>
+        <div class="hud__io">
+          <div class="pbs">
+            <button class="pb pb--g" id="bStart" aria-label="Start push button (hold)"><span></span>START</button>
+            <button class="pb pb--r" id="bStop" aria-label="Stop push button (hold)"><span></span>STOP</button>
+            <button class="pb pb--e" id="bEstop" aria-pressed="false" aria-label="Emergency stop (toggle)"><span></span>E-STOP</button>
+          </div>
+          <div class="cam" id="cam">
+            <video id="camVid" src="assets/vid/foldx-loop.mp4" poster="assets/vid/foldx-loop.jpg" muted loop playsinline preload="metadata"></video>
+            <span class="cam__tag">CAM · FOLDX</span>
+          </div>
+        </div>
+        <p class="hud__il"><span class="addr">IL</span> LD X0 · OR Y0 · ANI X1 · ANI X2 · OUT Y0</p>
+        <p class="hud__hint" id="hudHint">Press <b>START</b>, then let go — the seal-in keeps the motor running. That's ladder logic.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- FoldX -->
+  <article class="proj proj--rev reveal" id="foldx">
+    <div class="proj__meta">
+      <p class="tags"><span class="tag tag--y">Hardware</span><span class="tag">National finalist</span><span class="tag">Team AutoWeavers</span></p>
+      <h3>FoldX <small>PLC fabric-folding machine</small></h3>
+      <p class="lead">An automatic fabric-folding machine — PLC-controlled, with an HMI touchscreen, tower-light status and a roller-and-conveyor folding mechanism. Taken to the national final of the <b>6th Mitsubishi Electric Cup (MECA)</b> at MIT World Peace University, Pune, 20–21 Feb 2026, where the team received a Certificate of Appreciation for commendable performance.</p>
+      <div class="iiot">
+        <video class="lazyvid" data-src="assets/vid/foldx-api.mp4" poster="assets/vid/foldx-api.jpg" muted loop playsinline preload="none"></video>
+        <div>
+          <h4>+ IIoT layer</h4>
+          <p>Machine data — temperature, pressure, production count — served over a REST API, so the line can be watched from any dashboard.</p>
+          <pre>{ "temperature": 80,
+  "pressure": 1234,
+  "productionCount": 0 }</pre>
+        </div>
+      </div>
+      <p class="chips"><span>PLC ladder logic</span><span>HMI</span><span>Tower light</span><span>REST API</span><span>Web front end</span></p>
+      <p class="links"><a class="btn btn--ghost btn--sm" href="https://sreeharishadow358-cmyk.github.io/frontend-of-foldx-pro/" target="_blank" rel="noopener">FoldX web front end ↗</a></p>
+    </div>
+    <div class="proj__media gal">
+      <video class="gal__main lazyvid" data-src="assets/vid/foldx-loop.mp4" poster="assets/vid/foldx-loop.jpg" muted loop playsinline preload="none"></video>
+      <div class="slides" data-interval="3800" aria-roledescription="carousel" aria-label="FoldX photos">
+        <figure class="slide on"><img src="assets/img/foldx-team.jpg" alt="Team AutoWeavers with the FoldX machine at booth 14, SNS College of Technology, 6th Mitsubishi Electric Cup"><figcaption>Booth 14 · MECA national final, Pune</figcaption></figure>
+        <figure class="slide"><img src="assets/img/meca-awards.jpg" alt="Appreciation trophy, certificates and medals from the 6th Mitsubishi Electric Cup 2026"><figcaption>Appreciation award &amp; certificates</figcaption></figure>
+        <figure class="slide"><img src="assets/img/meca-certificate.jpg" alt="Certificate of Participation in the final event, presented to Sree Hari G"><figcaption>Certificate · Participation in the final event</figcaption></figure>
+        <div class="slides__dots" role="tablist"></div>
+      </div>
+    </div>
+  </article>
+
+  <!-- IoT -->
+  <article class="proj proj--small reveal" id="iot">
+    <figure class="proj__img"><img src="assets/img/traffic-signal.jpg" alt="Smart traffic signal model: four-way junction with IR sensors and an Arduino UNO" loading="lazy"></figure>
+    <div class="proj__meta">
+      <p class="tags"><span class="tag tag--y">IoT</span><span class="tag">Solo build</span></p>
+      <h3>Smart Traffic Signal</h3>
+      <p class="lead">A density-aware four-way junction. IR sensors detect queued vehicles on each road and an Arduino UNO adjusts the signal timing to clear the busiest side first. I designed the model, wired it and wrote the firmware.</p>
+      <p class="chips"><span>Arduino UNO</span><span>IR sensors</span><span>Embedded C++</span><span>Model design</span></p>
+    </div>
+  </article>
+
+  <!-- Code -->
+  <div class="code reveal">
+    <h3 class="code__h"><span class="pip"></span> More on GitHub</h3>
+    <div class="code__grid">
+      <a class="repo" href="https://github.com/sreeharishadow358-cmyk/plc-full-web" target="_blank" rel="noopener"><b>plc-full-web</b><span>Smart Ladder — AI ladder logic with RAG, backend &amp; dataset</span><i>TypeScript</i></a>
+      <a class="repo" href="https://github.com/sreeharishadow358-cmyk/frontend-of-foldx-pro" target="_blank" rel="noopener"><b>frontend-of-foldx-pro</b><span>Web front end for the FoldX machine</span><i>HTML · CSS · JS</i></a>
+      <a class="repo" href="https://github.com/sreeharishadow358-cmyk/Skyline_tourist_packages" target="_blank" rel="noopener"><b>Skyline_tourist_packages</b><span>Tour-package website</span><i>HTML</i></a>
+      <a class="repo" href="https://github.com/sreeharishadow358-cmyk/recycle-box-" target="_blank" rel="noopener"><b>recycle-box</b><span>Full-stack web app — front end &amp; backend</span><i>JavaScript</i></a>
+      <a class="repo" href="https://github.com/sreeharishadow358-cmyk/csi-event-repo-" target="_blank" rel="noopener"><b>csi-event-repo</b><span>Event website</span><i>TypeScript</i></a>
+      <a class="repo repo--all" href="https://github.com/sreeharishadow358-cmyk" target="_blank" rel="noopener"><b>All repositories ↗</b><span>github.com/sreeharishadow358-cmyk</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Y1 AUTOMATION -->
+<section class="sec" id="automate">
+  <header class="sec__head reveal">
+    <p class="eyebrow"><span class="idx">( 02 )</span>Software automation</p>
+    <h2>The wiring between<br><em>software</em> and machines.</h2>
+  </header>
+  <div class="flow reveal">
+    <svg class="flow__svg" viewBox="0 0 1000 340" role="img" aria-label="Example automation flow: a machine sensor triggers a webhook, an AI agent decides, then results go to a Google Sheet, a WhatsApp alert and back to the PLC">
+      <defs><linearGradient id="fg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0"><stop offset="0" stop-color="#5cf2b0"/><stop offset=".5" stop-color="#4de1ff"/><stop offset="1" stop-color="#8b7bff"/></linearGradient></defs>
+      <g class="flow__wires">
+        <path d="M150 170 C 210 170, 230 170, 290 170"/>
+        <path d="M430 170 C 490 170, 510 170, 570 170"/>
+        <path d="M710 170 C 770 170, 760 70, 830 70"/>
+        <path d="M710 170 C 770 170, 770 170, 830 170"/>
+        <path d="M710 170 C 770 170, 760 270, 830 270"/>
+      </g>
+      <g class="flow__pulses">
+        <circle r="5"><animateMotion dur="2.4s" repeatCount="indefinite" path="M150 170 C 210 170, 230 170, 290 170"/></circle>
+        <circle r="5"><animateMotion dur="2.4s" begin=".6s" repeatCount="indefinite" path="M430 170 C 490 170, 510 170, 570 170"/></circle>
+        <circle r="5"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M710 170 C 770 170, 760 70, 830 70"/></circle>
+        <circle r="5"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M710 170 C 770 170, 770 170, 830 170"/></circle>
+        <circle r="5"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M710 170 C 770 170, 760 270, 830 270"/></circle>
+      </g>
+      <g class="node n-g"><rect x="10" y="130" width="140" height="80" rx="14"/><text x="80" y="164">Machine</text><text class="s" x="80" y="186">PLC · ESP32</text></g>
+      <g class="node"><rect x="290" y="130" width="140" height="80" rx="14"/><text x="360" y="164">Webhook</text><text class="s" x="360" y="186">trigger</text></g>
+      <g class="node n-y"><rect x="570" y="120" width="140" height="100" rx="14"/><text x="640" y="160">AI agent</text><text class="s" x="640" y="184">LLM · decides</text><text class="s" x="640" y="202">summarises</text></g>
+      <g class="node n-b"><rect x="830" y="35" width="150" height="70" rx="14"/><text x="905" y="66">Sheet / DB</text><text class="s" x="905" y="86">log every event</text></g>
+      <g class="node n-r"><rect x="830" y="135" width="150" height="70" rx="14"/><text x="905" y="166">Alert</text><text class="s" x="905" y="186">WhatsApp · email</text></g>
+      <g class="node n-g"><rect x="830" y="235" width="150" height="70" rx="14"/><text x="905" y="266">Back to PLC</text><text class="s" x="905" y="286">adjust the line</text></g>
+    </svg>
+    <p class="flow__note">An example of the kind of flow I build toward: n8n-style automation where a machine event becomes a decision, a record and an action — without anyone copying data by hand.</p>
+  </div>
+  <div class="pillars">
+    <div class="pillar reveal"><i>01</i><h3>Connect</h3><p>REST APIs, webhooks and MQTT-style messaging so PLCs, ESP32s and web apps talk to each other.</p></div>
+    <div class="pillar reveal"><i>02</i><h3>Decide</h3><p>LLMs and rule engines that check, summarise and choose — with validation, so the output can be trusted.</p></div>
+    <div class="pillar reveal"><i>03</i><h3>Act</h3><p>Workflows that log, alert and push changes back to the machine — the boring work, automated.</p></div>
+  </div>
+</section>
+
+<!-- FREELANCE & BRANDS -->
+<section class="sec" id="freelance">
+  <header class="sec__head reveal">
+    <p class="eyebrow"><span class="idx">( 03 )</span>Freelance &amp; brands</p>
+    <h2>Built for clients.<br>Grown <em>with startups.</em></h2>
+    <p class="sec__lead">Alongside college I take on real work: hardware builds for clients and digital work for 3–4 startups. Different briefs, same rule — ship something that works.</p>
+  </header>
+  <div class="fl">
+    <article class="fl__big reveal">
+      <figure class="fl__img"><img src="assets/img/smart-parking.jpg" alt="Smart parking system model: six slots with IR sensors, occupied and vacant lights on the gantry, an available-slots counter and an entry barrier" loading="lazy"><span class="fl__badge">Client build</span></figure>
+      <div class="fl__body">
+        <p class="tags"><span class="tag tag--y">Freelance</span><span class="tag">IoT</span><span class="tag">Made by me</span></p>
+        <h3>Smart Parking System</h3>
+        <p>A six-slot parking model built for a client. An IR sensor in every bay drives live <b>occupied / vacant</b> lights on the gantry, a digital board counts the free slots, and a barrier guards the entry.</p>
+        <p class="chips"><span>IR sensors ×6</span><span>Microcontroller</span><span>7-segment display</span><span>Servo barrier</span><span>Model design</span></p>
+      </div>
+    </article>
+    <a class="fl__card reveal" href="https://www.instagram.com/skill_hive_innovations/" target="_blank" rel="noopener">
+      <span class="fl__k">Startup · Instagram</span>
+      <h3>Skill Hive Innovations</h3>
+      <p>A remote digital-solutions startup — apps, web and AI. I handle its Instagram: the Play Store app launch, brand campaigns, workshop promotions and festival posts.</p>
+      <span class="fl__go">@skill_hive_innovations ↗</span>
+    </a>
+    <a class="fl__card reveal" href="https://www.instagram.com/incredible.scroll/" target="_blank" rel="noopener">
+      <span class="fl__k">Media page · Instagram</span>
+      <h3>The InCredible Scroll</h3>
+      <p>A news and current-affairs page I run — researching, writing and designing quick-read carousels every week.</p>
+      <span class="fl__go">@incredible.scroll ↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- Y3 SERVICES -->
+<section class="sec" id="services">
+  <header class="sec__head reveal">
+    <p class="eyebrow"><span class="idx">( 04 )</span>Work with me</p>
+    <h2>One engineer, from the<br><em>web app</em> to the motor.</h2>
+  </header>
+  <div class="svc">
+    <div class="svc__c reveal"><i>01</i><h3>Web &amp; AI apps</h3><p>Fast websites, web apps and dashboards — with AI features built in where they actually help.</p><span>Next.js · AI · Dashboards</span></div>
+    <div class="svc__c reveal"><i>02</i><h3>PLC &amp; automation</h3><p>Ladder logic, HMI screens, machine sequencing and safety interlocks — designed to be safe first.</p><span>Ladder · HMI · Interlocks</span></div>
+    <div class="svc__c reveal"><i>03</i><h3>IoT &amp; embedded</h3><p>Arduino and ESP32 prototypes, sensor systems, and the dashboards and APIs they talk to.</p><span>Arduino · ESP32 · REST</span></div>
+    <div class="svc__c reveal"><i>04</i><h3>Workflow automation</h3><p>n8n-style automations that connect your forms, sheets, WhatsApp, AI and machines — so repetitive tasks run themselves.</p><span>n8n · Webhooks · APIs</span></div>
+  </div>
+  <p class="svc__cta reveal"><a class="btn btn--y" href="#contact">Tell me about your project</a><span>India &amp; international clients · remote friendly</span></p>
+</section>
+
+<!-- JOURNEY: side-scrolling 3D world -->
+<section id="journey" class="journey">
+  <div class="sec journey__head">
+    <header class="sec__head reveal">
+      <p class="eyebrow"><span class="idx">( 05 )</span>Journey</p>
+      <h2>Competitions, sites<br><em>and</em> shop floors.</h2>
+    </header>
+  </div>
+  <div class="world" id="world">
+    <div class="world__stage">
+      <canvas id="worldCanvas" aria-label="3D world: scroll to travel sideways through Sree Hari's milestones while his illustrated portrait watches"></canvas>
+      <article class="world__card in" aria-live="polite">
+        <p class="world__n">( <b id="wN">01</b> / 09 )</p>
+        <time id="wT"></time>
+        <h3 id="wH"></h3>
+        <p id="wP"></p>
+      </article>
+      <div class="world__rail" aria-hidden="true"><i class="world__bar"><i id="wBar"></i></i><ol><li><span>Internship</span></li><li><span>Robotics</span></li><li><span>Feb 2026</span></li><li><span>2026</span></li><li><span>Jun 2026</span></li><li><span>Jul 2026</span></li><li><span>Aug 2026</span></li><li><span>Sep 2026</span></li><li><span>2026 · ongoing</span></li></ol></div>
+      <p class="world__hint" aria-hidden="true">Scroll to walk the timeline →</p>
+    </div>
+  </div>
+  <ol class="tl world__list">
+    <li class="tl__i"><time>Internship</time><div><h3>Two-wheeler service · Yamaha showroom</h3><p>Hands-on drivetrain and CVT servicing — the mechanical side of mechatronics.</p></div><img src="assets/img/yamaha-internship.jpg" alt="Servicing a scooter's CVT transmission during the Yamaha showroom internship" loading="lazy"></li>
+    <li class="tl__i" data-draw="mars"><time>Robotics</time><div><h3>e-Yantra Robotics Competition · IIT Bombay</h3><p>Programmed a stationary robot arm for a Mars-base logistics challenge — pick, place and hand-off, built and tested in simulation first.</p></div></li>
+    <li class="tl__i"><time>Feb 2026</time><div><h3>6th Mitsubishi Electric Cup · National final, Pune</h3><p>FoldX — Certificate of Appreciation for commendable performance.</p></div><img src="assets/img/meca-certificate.jpg" alt="Certificate of Participation in the final event, 6th Mitsubishi Electric Cup 2026, presented to Sree Hari G" loading="lazy"></li>
+    <li class="tl__i" data-draw="nxp"><time>2026</time><div><h3>NXP Cup India 2026</h3><p>Autonomous patient-delivery car challenge. We didn't advance — and learned more about line-following and timing than any classroom taught.</p></div></li>
+    <li class="tl__i"><time>Jun 2026</time><div><h3>Field internship · AC &amp; building services, Coimbatore</h3><p>On-site ducting and wiring at a commercial tower — real installs, real deadlines.</p></div><img src="assets/img/ac-internship.jpg" alt="Working on ceiling ducting and wiring during the AC internship in Coimbatore" loading="lazy"></li>
+    <li class="tl__i"><time>Jul 2026</time><div><h3>Hackathon · CSI College of Engineering, Ooty</h3><p>Team lead — an overnight build session in the hills.</p></div><img src="assets/img/csi-ooty.jpg" alt="Team working late at the CSI College of Engineering hackathon, Ooty" loading="lazy"></li>
+    <li class="tl__i"><time>Aug 2026</time><div><h3>AASHAV 2026 Hackathon · Saveetha, Chennai</h3><p>Led the team through a timed build in a hall of hundreds.</p></div><img src="assets/img/aashav-saveetha.jpg" alt="AASHAV 2026 hackathon hall at Saveetha, Chennai" loading="lazy"></li>
+    <li class="tl__i"><time>Sep 2026</time><div><h3>Industry visit — Smart Ladder</h3><p>Walked engineers through the tool and took their feedback into the next build.</p></div><img src="assets/img/industry-visit.jpg" alt="Team presenting Smart Ladder during an industry visit" loading="lazy"></li>
+    <li class="tl__i" data-draw="team"><time>2026 · ongoing</time><div><h3>Smart India Hackathon 2026</h3><p>A team of six building Smart Ladder — shortlisted in the internal round (Student Innovation). Next rounds in progress.</p></div></li>
+  </ol>
+</section>
+
+<!-- SKILLS -->
+<section class="sec" id="skills">
+  <header class="sec__head reveal">
+    <p class="eyebrow"><span class="idx">( 06 )</span>Skills</p>
+    <h2>Every skill, <em>picked</em><br>and placed on the shelf.</h2>
+  </header>
+  <div class="cell reveal">
+    <div class="cell__3d"><canvas id="skillsCell" aria-label="3D robot arm picking skill blocks from a conveyor and shelving them, on a loop"></canvas>
+      <div class="cell__now"><span id="skCat">Software &amp; AI</span><b id="skNow">Next.js</b></div>
+    </div>
+    <div class="cell__list"><div class="skg"><h3>Software & AI</h3><ul><li class="sk" data-i="0" data-name="Next.js" data-cat="Software & AI">Next.js</li><li class="sk" data-i="1" data-name="TypeScript" data-cat="Software & AI">TypeScript</li><li class="sk" data-i="2" data-name="Node.js" data-cat="Software & AI">Node.js</li><li class="sk" data-i="3" data-name="LLMs & RAG" data-cat="Software & AI">LLMs & RAG</li><li class="sk" data-i="4" data-name="Git & Vercel" data-cat="Software & AI">Git & Vercel</li></ul></div><div class="skg"><h3>Automation</h3><ul><li class="sk" data-i="5" data-name="n8n workflows" data-cat="Automation">n8n workflows</li><li class="sk" data-i="6" data-name="Webhooks & APIs" data-cat="Automation">Webhooks & APIs</li></ul></div><div class="skg"><h3>Hardware</h3><ul><li class="sk" data-i="7" data-name="PLC ladder logic" data-cat="Hardware">PLC ladder logic</li><li class="sk" data-i="8" data-name="HMI screens" data-cat="Hardware">HMI screens</li><li class="sk" data-i="9" data-name="Arduino" data-cat="Hardware">Arduino</li><li class="sk" data-i="10" data-name="ESP32 IoT" data-cat="Hardware">ESP32 IoT</li><li class="sk" data-i="11" data-name="Robotics" data-cat="Hardware">Robotics</li></ul></div></div>
+  </div>
+</section>
+
+<!-- M3 BEYOND -->
+<section class="sec beyond reveal">
+  <video class="lazyvid" data-src="assets/vid/mobile-shop.mp4" poster="assets/vid/mobile-shop.jpg" muted loop playsinline preload="none"></video>
+  <div>
+    <p class="eyebrow"><span class="idx">( 07 )</span>Beyond engineering</p>
+    <h2>I've also <em>sold</em> phone cases.</h2>
+    <p>At a college fest, a few friends and I ran a mobile-accessories stall — sourcing stock, setting prices, pulling in customers. It taught me what clients actually care about: what it does for them, what it costs, and when they'll have it.</p>
+  </div>
+</section>
+
+<!-- LATEST NEWS -->
+<section class="sec news" id="news">
+  <header class="sec__head reveal news__head">
+    <div>
+      <p class="eyebrow"><span class="idx">( 08 )</span>Latest</p>
+      <h2>News from <em>the workbench.</em></h2>
+    </div>
+    <div class="news__nav"><button class="icon-btn" id="newsPrev" type="button" aria-label="Previous news">←</button><button class="icon-btn" id="newsNext" type="button" aria-label="Next news">→</button></div>
+  </header>
+  <div class="news__track reveal" id="newsTrack" tabindex="0" aria-label="Latest news">
+    <article class="nw"><time>Now</time><span class="nw__k">Status</span><h3>Ready for the next stage</h3><p>Software, AI and automation — in India or remote. Looking for the team that will give me a real problem and the room to prove myself.</p><a href="#contact">Get in touch →</a></article>
+    <article class="nw"><time>2026 · ongoing</time><span class="nw__k">Smart India Hackathon</span><h3>Smart Ladder shortlisted in the SIH internal round</h3><p>Our team of six cleared the internal round in the Student Innovation category. Next rounds in progress.</p><a href="#work">Read the case study →</a></article>
+    <article class="nw"><time>Live</time><span class="nw__k">Product</span><h3>PLC AI Studio is live on the web</h3><p>Describe a machine in plain English — get verified, safety-checked ladder logic and a virtual station to test it.</p><a href="https://plc-ai-studio-rho.vercel.app" target="_blank" rel="noopener">Try it ↗</a></article>
+    <article class="nw"><time>Sep 2026</time><span class="nw__k">Industry</span><h3>Smart Ladder demoed to working engineers</h3><p>An industry visit put the tool in front of people who write PLC code for a living — their feedback shaped the next build.</p><a href="#journey">See the journey →</a></article>
+    <article class="nw"><time>Aug 2026</time><span class="nw__k">Hackathon</span><h3>Led a team at AASHAV 2026, Chennai</h3><p>A timed build in a hall of hundreds at Saveetha — one of three hackathon teams I've led this year.</p><a href="#journey">See the journey →</a></article>
+    <article class="nw"><time>Feb 2026</time><span class="nw__k">National final</span><h3>FoldX at the 6th Mitsubishi Electric Cup</h3><p>Our PLC fabric-folding machine reached the national final at MIT-WPU, Pune, and took a Certificate of Appreciation.</p><a href="#foldx">See FoldX →</a></article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <div class="term reveal">
+    <div class="term__bar"><i></i><i></i><i></i><span>sree@portfolio — contact</span></div>
+    <div class="term__body">
+      <p class="out">Built it. Shipped it. Led it. Next: the stage.</p>
+      <h2>Give me one opportunity.<br><em>I'll prove it.</em></h2>
+      <p class="contact__pitch">I've built AI tools, taken a machine to a national final, led hackathon teams and delivered for clients and startups. What I'm asking for now is a stage — one opportunity to perform at full capacity and prove what I can do for your team. Give me a real problem, and I'll give you something that runs.</p>
+      <div class="contact__links">
+        <a class="btn btn--y" href="mailto:sreeharishadow358@gmail.com?subject=Opportunity%20for%20Sree%20Hari">sreeharishadow358@gmail.com</a>
+        <button class="btn btn--ghost" id="copyMail" type="button">Copy email</button>
+      </div>
+      <p class="contact__soc">
+        <a href="https://www.linkedin.com/in/sreehari-ganeshan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/sreeharishadow358-cmyk" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://plc-ai-studio-rho.vercel.app" target="_blank" rel="noopener">PLC AI Studio ↗</a>
+      </p>
+      <p class="contact__ready"><span class="dot run"></span>Ready when you are <span class="cursor"></span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <span>© 2026 Sree Hari G</span>
+  <span>Built with Three.js · SNS College of Technology, Coimbatore</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script type="module" src="assets/js/theme.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+<script type="module" src="assets/js/show.js"></script>
+<script type="module" src="assets/js/ladder.js"></script>
+<script type="module" src="assets/js/skills.js"></script>
+<script type="module" src="assets/js/wires.js"></script>
+<script type="module" src="assets/js/journey.js"></script>
+</body>
+</html>
